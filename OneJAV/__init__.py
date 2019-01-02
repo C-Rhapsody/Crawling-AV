@@ -94,10 +94,10 @@ ua = {'User-Agent' : str(ua.chrome)}
 ###############################################################################
 # Transmission - Localhost // Port 9000 <Default 9091> // User = None // Password = None
 down_path = '/downloads/complete/야동.유모'
-tc_address = '112.220.218.19'
-tc_port_num = 9000
-tc_user = 'rich'
-tc_pass = 'rich@3@6!'
+tc_address = 'localhost'
+tc_port_num = 9091
+tc_user = None
+tc_pass = None
 tc = transmissionrpc.Client(
   address=tc_address, port=tc_port_num, user=tc_user, password=tc_pass
 )
