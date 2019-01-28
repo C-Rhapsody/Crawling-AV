@@ -56,6 +56,7 @@ def child(dir, url):
             with open(filename, 'wb') as file:
                 file.write(res.content)
             transmission(dir, filename)
+            os.remove(filename)
         except:
             return False
 
