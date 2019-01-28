@@ -38,7 +38,7 @@ def transmission(dir, seed_locate):
         # Transmission 데몬이 Local에서 동작할 때 정상동작
         tc.add_torrent('file:///' + seed_locate, download_dir="/downloads/complete/" + dir)
     except:
-return False
+        return False
 
 def child(dir, url):
     with requests.Session() as s:
