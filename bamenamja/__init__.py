@@ -55,8 +55,8 @@ def child(dir, url):
             res = s.get(link)
             with open(filename, 'wb') as file:
                 file.write(res.content)
-            transmission(dir, filename)
-            os.remove(filename)
+            if transmission(dir, os.path.realpath(filename)):
+                os.remove(os.path.realpath(filename))
         except:
             return False
 
