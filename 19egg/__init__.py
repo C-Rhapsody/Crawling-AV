@@ -19,7 +19,6 @@ custom_useragent = str(UserAgent().chrome)
 
 #################################################################################
 # Transmission Config
-'''
 tc_address = 'localhost'
 tc_port_num = 9091
 tc_user = None
@@ -27,11 +26,9 @@ tc_pass = None
 tc = transmissionrpc.Client(
     address=tc_address, port=tc_port_num, user=tc_user, password=tc_pass
 )
-'''
 
 #################################################################################
 # Action
-
 def transmission(dir, seed_locate):
     try:
         # Transmission 데몬이 Local에서 동작할 때 정상동작
